@@ -1,0 +1,11 @@
+*~
+*.laz
+*.raw
+*.nii
+*.zip
+*.pdb
+*.cif
+*.tif
+*.xls*
+*.doc*
+*.vtk
