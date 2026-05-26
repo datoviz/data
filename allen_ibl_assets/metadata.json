@@ -1,0 +1,116 @@
+{
+  "coordinate_system": "IBL_ML_AP_DV",
+  "source_ccf_order": "apdvml",
+  "res_um": 25.0,
+  "offset_xyz_m": [
+    -4.450203062049273e-05,
+    -0.002429739797878184,
+    -0.003964026746612368
+  ],
+  "scale": 200.0,
+  "volume_shape_ap_ml_dv": [
+    528,
+    456,
+    320
+  ],
+  "texture_axis_for_ml_ap_dv": {
+    "ML": "X",
+    "AP": "Y",
+    "DV": "Z"
+  },
+  "volume_bounds_scene": [
+    [
+      -1.1388995938759015,
+      -1.074052040424363,
+      -0.7407946506775265
+    ],
+    [
+      1.1411004061240984,
+      1.5659479595756365,
+      0.8592053493224736
+    ]
+  ],
+  "mesh_files": {
+    "position": "allen_ibl_mesh_pos.npy",
+    "normal": "allen_ibl_mesh_normal.npy",
+    "color": "allen_ibl_mesh_color.npy",
+    "index": "allen_ibl_mesh_idx.npy"
+  },
+  "regions": [
+    {
+      "id": 997,
+      "acronym": "root",
+      "name": "Whole brain",
+      "rgba": [
+        214,
+        214,
+        214,
+        42
+      ],
+      "vertex_start": 0,
+      "vertex_count": 49324,
+      "index_start": 0,
+      "index_count": 295914
+    },
+    {
+      "id": 315,
+      "acronym": "Isocortex",
+      "name": "Isocortex",
+      "rgba": [
+        112,
+        185,
+        102,
+        156
+      ],
+      "vertex_start": 49324,
+      "vertex_count": 31592,
+      "index_start": 295914,
+      "index_count": 189528
+    },
+    {
+      "id": 1089,
+      "acronym": "HPF",
+      "name": "Hippocampal formation",
+      "rgba": [
+        126,
+        208,
+        75,
+        178
+      ],
+      "vertex_start": 80916,
+      "vertex_count": 14773,
+      "index_start": 485442,
+      "index_count": 88590
+    },
+    {
+      "id": 549,
+      "acronym": "TH",
+      "name": "Thalamus",
+      "rgba": [
+        255,
+        144,
+        159,
+        190
+      ],
+      "vertex_start": 95689,
+      "vertex_count": 6593,
+      "index_start": 574032,
+      "index_count": 39510
+    },
+    {
+      "id": 294,
+      "acronym": "SC",
+      "name": "Superior colliculus",
+      "rgba": [
+        255,
+        153,
+        0,
+        184
+      ],
+      "vertex_start": 102282,
+      "vertex_count": 2767,
+      "index_start": 613542,
+      "index_count": 16590
+    }
+  ]
+}
