@@ -1,0 +1,193 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1260716,
+      "dtype": "float32",
+      "format": "npy",
+      "path": "prepared/allen_ibl_mesh_pos.npy",
+      "role": "mesh_position",
+      "sha256": "0fec3e00993f11f7b93c30761f80d3a71294cf2f16bfd30f9f3d6d552f7fddce",
+      "shape": [
+        105049,
+        3
+      ]
+    },
+    {
+      "bytes": 1260716,
+      "dtype": "float32",
+      "format": "npy",
+      "path": "prepared/allen_ibl_mesh_normal.npy",
+      "role": "mesh_normal",
+      "sha256": "97d9d96e335dee4ed6563c12125b658370b6b71ea9ac9d806f2381b3ea7c9b5a",
+      "shape": [
+        105049,
+        3
+      ]
+    },
+    {
+      "bytes": 420324,
+      "dtype": "uint8",
+      "format": "npy",
+      "path": "prepared/allen_ibl_mesh_color.npy",
+      "role": "mesh_color",
+      "sha256": "4745a61f001961555fbb1bc622e19cd99b80738d2f988d51981ea9c30a7a6a15",
+      "shape": [
+        105049,
+        4
+      ]
+    },
+    {
+      "bytes": 2520656,
+      "dtype": "uint32",
+      "format": "npy",
+      "path": "prepared/allen_ibl_mesh_idx.npy",
+      "role": "mesh_index",
+      "sha256": "41b2007ecb5942084c9219ffad930eab830d461c8ace2b9c8ca5e1f37a568ade",
+      "shape": [
+        630132
+      ]
+    },
+    {
+      "bytes": 3135183,
+      "dtype": "uint8",
+      "format": "npy.gz",
+      "path": "prepared/allen_mouse_brain_rgba.npy.gz",
+      "role": "rgba_volume",
+      "sha256": "e3bcc18d0375ba53c8388f4b05dc83f2e312a43230560fa2ce525d628aa4d34d",
+      "shape": [
+        528,
+        456,
+        320,
+        4
+      ]
+    },
+    {
+      "bytes": 2149,
+      "format": "json",
+      "path": "prepared/metadata.json",
+      "role": "mesh_metadata",
+      "sha256": "c0b95fed8ba436eaba99d62b651709ce6f66e9974e94d861ab4f3f700cf3bd0b"
+    }
+  ],
+  "id": "allen_ibl",
+  "processing": {
+    "created_at": "2026-06-04T10:07:31Z",
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.12.13"
+  },
+  "producer": {
+    "command": "python3.12 tools/data/prepare_existing_allen_ibl.py",
+    "script": "tools/data/prepare_existing_allen_ibl.py",
+    "script_version": "git:08453df14-dirty"
+  },
+  "schema": "datoviz.example-data.v1",
+  "source": {
+    "license": "Inherited from repository data provenance.",
+    "mesh_dir": "data/allen_ibl_assets",
+    "name": "Existing repository Allen/IBL assets",
+    "volume": "data/volumes/allen_mouse_brain_rgba.npy.gz"
+  },
+  "status": "committed",
+  "title": "Allen Mouse Brain IBL Mesh And Volume",
+  "validation": {
+    "coordinate_system": "IBL_ML_AP_DV",
+    "mesh_triangle_count": 210044,
+    "mesh_vertex_count": 105049,
+    "regions": [
+      {
+        "acronym": "root",
+        "id": 997,
+        "index_count": 295914,
+        "index_start": 0,
+        "name": "Whole brain",
+        "rgba": [
+          214,
+          214,
+          214,
+          42
+        ],
+        "vertex_count": 49324,
+        "vertex_start": 0
+      },
+      {
+        "acronym": "Isocortex",
+        "id": 315,
+        "index_count": 189528,
+        "index_start": 295914,
+        "name": "Isocortex",
+        "rgba": [
+          112,
+          185,
+          102,
+          156
+        ],
+        "vertex_count": 31592,
+        "vertex_start": 49324
+      },
+      {
+        "acronym": "HPF",
+        "id": 1089,
+        "index_count": 88590,
+        "index_start": 485442,
+        "name": "Hippocampal formation",
+        "rgba": [
+          126,
+          208,
+          75,
+          178
+        ],
+        "vertex_count": 14773,
+        "vertex_start": 80916
+      },
+      {
+        "acronym": "TH",
+        "id": 549,
+        "index_count": 39510,
+        "index_start": 574032,
+        "name": "Thalamus",
+        "rgba": [
+          255,
+          144,
+          159,
+          190
+        ],
+        "vertex_count": 6593,
+        "vertex_start": 95689
+      },
+      {
+        "acronym": "SC",
+        "id": 294,
+        "index_count": 16590,
+        "index_start": 613542,
+        "name": "Superior colliculus",
+        "rgba": [
+          255,
+          153,
+          0,
+          184
+        ],
+        "vertex_count": 2767,
+        "vertex_start": 102282
+      }
+    ],
+    "volume_bounds_scene": [
+      [
+        -1.1388995938759015,
+        -1.074052040424363,
+        -0.7407946506775265
+      ],
+      [
+        1.1411004061240984,
+        1.5659479595756365,
+        0.8592053493224736
+      ]
+    ],
+    "volume_dtype": "uint8",
+    "volume_shape": [
+      528,
+      456,
+      320,
+      4
+    ]
+  }
+}

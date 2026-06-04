@@ -1,0 +1,138 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2408,
+      "format": "u32",
+      "path": "prepared/atom_chain.u32",
+      "role": "atom_chain",
+      "sha256": "5d81987966a0197c8a663d8800d87b97c0c5ea4f619d42f44e22bf5321d14cbb"
+    },
+    {
+      "bytes": 2408,
+      "format": "rgba8",
+      "path": "prepared/atom_color_bfactor.rgba8",
+      "role": "atom_color_bfactor",
+      "sha256": "d693ac1b317dcba1bc75b5e7bd724a89d7ea81499db050bab733fcb51130e209"
+    },
+    {
+      "bytes": 2408,
+      "format": "rgba8",
+      "path": "prepared/atom_color_chain.rgba8",
+      "role": "atom_color_chain",
+      "sha256": "6fa2a2bc540afd29b639e106bc93e146f3d47a6ef329a8ef0eb0531ff3cbce93"
+    },
+    {
+      "bytes": 2408,
+      "format": "rgba8",
+      "path": "prepared/atom_color_element.rgba8",
+      "role": "atom_color_element",
+      "sha256": "3d5e54e73a4b97f23a7b663e118163b2e9611e0c730c3dd4c4c6d4cae4947be2"
+    },
+    {
+      "bytes": 7224,
+      "format": "f32",
+      "path": "prepared/atom_position.f32",
+      "role": "atom_position",
+      "sha256": "54cb65dd2f0beb5ea4e4edbba9f46e503ed76538d928ad46d1e4d7c7721b7730"
+    },
+    {
+      "bytes": 2408,
+      "format": "f32",
+      "path": "prepared/atom_radius_ball.f32",
+      "role": "atom_radius_ball",
+      "sha256": "08a74e07a0cace378afa1d594dcad8010047b68b3b62de57029303e171c9b8a6"
+    },
+    {
+      "bytes": 2408,
+      "format": "f32",
+      "path": "prepared/atom_radius_vdw.f32",
+      "role": "atom_radius_vdw",
+      "sha256": "f1880b8adf3c337eadba4125b5228658d43133a5d41b5c2467029313d6209f8e"
+    },
+    {
+      "bytes": 2408,
+      "format": "u32",
+      "path": "prepared/atom_residue.u32",
+      "role": "atom_residue",
+      "sha256": "f0e6135590ebb863d487661086913a3f3be821b03562527fc27dac25b7f671c6"
+    },
+    {
+      "bytes": 4864,
+      "format": "u32",
+      "path": "prepared/bond_index.u32",
+      "role": "bond_index",
+      "sha256": "149f55e9a801d5f0f3f27d881e7f3ca9e8a503b440abd9062128b3efa60fc39b"
+    },
+    {
+      "bytes": 1897,
+      "format": "json",
+      "path": "prepared/metadata.json",
+      "role": "metadata",
+      "sha256": "002bd80c1c069b3aff63a017edba2b1bd50fb2793c0ec403aa8f9b534ccf1515"
+    },
+    {
+      "bytes": 76,
+      "format": "u8",
+      "path": "prepared/residue_secondary_structure.u8",
+      "role": "residue_secondary_structure",
+      "sha256": "22603b9092f3ad640385dbde129cd7d5eee6229e83b8c05cd6b7f93d1f9d17d2"
+    },
+    {
+      "bytes": 230496,
+      "format": "rgba8",
+      "path": "prepared/ribbon_color_chain.rgba8",
+      "role": "ribbon_color_chain",
+      "sha256": "8ae23cbf5d39d74b3540b9b668afc51229aa02949da3b910663a1ac0f1fcee14"
+    },
+    {
+      "bytes": 230496,
+      "format": "rgba8",
+      "path": "prepared/ribbon_color_ss.rgba8",
+      "role": "ribbon_color_ss",
+      "sha256": "589f2c0e088858d11582860cce637e5eebce4cfab131eb53319bec47c0afd634"
+    },
+    {
+      "bytes": 1382400,
+      "format": "u32",
+      "path": "prepared/ribbon_index.u32",
+      "role": "ribbon_index",
+      "sha256": "baa622dadd5023396c9b7624814e9a85b8bd4793c7df7ba1d9577f6246e5d9bf"
+    },
+    {
+      "bytes": 691488,
+      "format": "f32",
+      "path": "prepared/ribbon_normal.f32",
+      "role": "ribbon_normal",
+      "sha256": "b7efdb2d26df2d2dd0d4d38fe75fad0f5d0e6c0daa52174dc4cf13cd477e3375"
+    },
+    {
+      "bytes": 691488,
+      "format": "f32",
+      "path": "prepared/ribbon_position.f32",
+      "role": "ribbon_position",
+      "sha256": "152cf7f5faebb6a3d5db2b9dd002dbfad29f617e8b7dd79ff3096d04c7f01333"
+    }
+  ],
+  "id": "proteins/1ubq",
+  "processing": {
+    "created_at": "2026-06-04T09:56:01Z",
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.12.13"
+  },
+  "producer": {
+    "command": "python3.12 tools/data/prepare_protein_arcball.py 1UBQ --regenerate",
+    "script": "tools/data/prepare_protein_arcball.py",
+    "script_version": "git:a6c16eda0-dirty"
+  },
+  "schema": "datoviz.example-data.v1",
+  "source": {
+    "license": "RCSB PDB data usage policy applies.",
+    "name": "RCSB PDB 1UBQ",
+    "url": "https://files.rcsb.org/download/1UBQ.pdb"
+  },
+  "status": "committed",
+  "title": "1UBQ Protein Arcball Bundle",
+  "validation": {
+    "artifact_count": 16
+  }
+}

@@ -1,0 +1,21 @@
+*~
+.DS_Store
+
+# Local source/cache/work areas.
+.cache/
+cache/
+tmp/
+work/
+source/
+
+# Raw downloads and temporary extraction products should be promoted explicitly.
+*.laz
+*.raw
+*.nii
+*.zip
+*.pdb
+*.cif
+*.tif
+*.xls*
+*.doc*
+*.vtk

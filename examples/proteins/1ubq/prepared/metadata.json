@@ -1,0 +1,69 @@
+{
+  "format": "datoviz.protein.bundle.v1",
+  "pdb_id": "1UBQ",
+  "source": "https://files.rcsb.org/download/1UBQ.pdb",
+  "normalized": true,
+  "normalization": "position = (angstrom - center) / radius",
+  "center": [
+    30.458499999999997,
+    29.500500000000002,
+    17.9425
+  ],
+  "radius": 23.34372581123245,
+  "bbox_min": [
+    15.44,
+    13.733,
+    -0.366
+  ],
+  "bbox_max": [
+    45.477,
+    45.268,
+    36.251
+  ],
+  "atom_count": 602,
+  "bond_count": 608,
+  "residue_count": 76,
+  "chain_count": 1,
+  "chains": [
+    "A"
+  ],
+  "has_surface": false,
+  "has_ribbon": true,
+  "dssp_assigned": false,
+  "secondary_structure_source": "pdb",
+  "secondary_structure_count": 49,
+  "secondary_structure_encoding": {
+    "0": "coil",
+    "1": "helix",
+    "2": "sheet",
+    "3": "turn"
+  },
+  "ribbon_samples_per_segment": 32,
+  "ribbon_cross_section_count": 24,
+  "ribbon_spline": "bspline",
+  "ribbon_width_scale": 1.5,
+  "ribbon_centerline_smoothing": 0.18,
+  "ribbon_sample_smoothing": 0.55,
+  "ribbon_sample_smoothing_passes": 3,
+  "ribbon_sample_smoothing_radius": 12,
+  "ribbon_frame_smoothing": 0.35,
+  "ribbon_vertex_count": 57624,
+  "ribbon_index_count": 345600,
+  "files": {
+    "atom_position": "atom_position.f32",
+    "atom_radius_vdw": "atom_radius_vdw.f32",
+    "atom_radius_ball": "atom_radius_ball.f32",
+    "atom_color_element": "atom_color_element.rgba8",
+    "atom_color_chain": "atom_color_chain.rgba8",
+    "atom_color_bfactor": "atom_color_bfactor.rgba8",
+    "atom_chain": "atom_chain.u32",
+    "atom_residue": "atom_residue.u32",
+    "bond_index": "bond_index.u32",
+    "ribbon_position": "ribbon_position.f32",
+    "ribbon_normal": "ribbon_normal.f32",
+    "ribbon_color_chain": "ribbon_color_chain.rgba8",
+    "ribbon_color_ss": "ribbon_color_ss.rgba8",
+    "ribbon_index": "ribbon_index.u32",
+    "residue_secondary_structure": "residue_secondary_structure.u8"
+  }
+}
