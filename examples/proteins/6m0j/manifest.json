@@ -1,0 +1,50 @@
+{
+  "artifacts": [
+    {
+      "bytes": 25624,
+      "format": "rgba8",
+      "path": "prepared/atom_color_element.rgba8",
+      "role": "atom_color_element",
+      "sha256": "fafaf56cf3bf6ccf4d254dc63a32d3fc87b527ade5f277aaf1fc3cdabae4c066"
+    },
+    {
+      "bytes": 76872,
+      "format": "f32",
+      "path": "prepared/atom_position.f32",
+      "role": "atom_position",
+      "sha256": "be230337a1ee7ee5d4c5c95956e5bfe5d98ad37e852fac1fef610d3ee4d7fea7"
+    },
+    {
+      "bytes": 25624,
+      "format": "f32",
+      "path": "prepared/atom_radius_vdw.f32",
+      "role": "atom_radius_vdw",
+      "sha256": "6eab38f6388e56b4b58252b7a100121d7b988196a66f204f6716ff16e7d2d101"
+    }
+  ],
+  "id": "proteins/6m0j",
+  "processing": {
+    "created_at": "2026-07-12T10:32:43Z",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.12.13"
+  },
+  "producer": {
+    "command": "python3.12 tools/data/prepare_protein_arcball.py 6M0J",
+    "script": "tools/data/prepare_protein_arcball.py",
+    "script_version": "git:0ee8e1e99-dirty"
+  },
+  "schema": "datoviz.example-data.v1",
+  "source": {
+    "license": "CC0-1.0",
+    "name": "RCSB PDB 6M0J",
+    "publication_doi": "https://doi.org/10.1038/s41586-020-2180-5",
+    "structure_doi": "https://doi.org/10.2210/pdb6m0j/pdb",
+    "url": "https://files.rcsb.org/download/6M0J.pdb",
+    "usage_url": "https://www.wwpdb.org/about/usage-policies"
+  },
+  "status": "committed",
+  "title": "6M0J Protein Arcball Bundle",
+  "validation": {
+    "artifact_count": 3
+  }
+}
