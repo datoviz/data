@@ -1,0 +1,66 @@
+{
+  "artifacts": [
+    {
+      "bytes": 23944316,
+      "estimate": "dSPM",
+      "format": "bin",
+      "path": "prepared/cortical_activity.bin",
+      "render_triangle_count": 639660,
+      "render_vertex_count": 319834,
+      "role": "cortical_activity_binary",
+      "sha256": "270bf5f4c2367ea50705b3cc67d431570a3d4a4fc95b3b2e2b67239bc041b89d",
+      "source_triangle_count": 16384,
+      "source_vertex_count": 8196,
+      "time_count": 145,
+      "value_dtype": "float32",
+      "version": 4
+    },
+    {
+      "bytes": 8995,
+      "format": "json",
+      "path": "prepared/cortical_activity.json",
+      "role": "cortical_activity_metadata",
+      "sha256": "892b04cf426ac9e9a486aa6965d873b73b6a4e70bbd94d01bc21151956bf341a"
+    }
+  ],
+  "id": "cortical_activity",
+  "processing": {
+    "created_at": "2026-07-16T13:50:40Z",
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "python": "3.13.3"
+  },
+  "producer": {
+    "command": "python3 tools/data/prepare_cortical_activity.py",
+    "script": "tools/data/prepare_cortical_activity.py",
+    "script_version": "git:1d5d09df5-dirty"
+  },
+  "schema": "datoviz.example-data.v1",
+  "source": {
+    "accession": "ds000248",
+    "doi": "10.18112/openneuro.ds000248.v1.2.4",
+    "license": "CC0",
+    "name": "MNE audiovisual sample data",
+    "participant": "sub-01",
+    "repository": "OpenNeuro",
+    "snapshot": "1.2.4"
+  },
+  "status": "committed",
+  "title": "Human Auditory Cortical Activity",
+  "validation": {
+    "accepted_epochs": 55,
+    "condition": "Auditory/Left",
+    "display_limits_dspm": [
+      8.0,
+      12.0,
+      15.0
+    ],
+    "peak_dspm": 21.2276668548584,
+    "peak_time_ms": 103.22752679850043
+  },
+  "web": {
+    "max_bytes": 25000000,
+    "required": true,
+    "version": "sha256-4b8e4d31566009f3",
+    "virtual_root": "data/examples/cortical_activity"
+  }
+}

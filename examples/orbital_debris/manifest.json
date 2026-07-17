@@ -1,0 +1,97 @@
+{
+  "artifacts": [
+    {
+      "bytes": 7295856,
+      "dtype": "mixed header + uint8 + uint32 + float32",
+      "format": "DVZORB1",
+      "path": "prepared/orbital_debris.bin",
+      "role": "render_ready_ephemeris",
+      "sha256": "b0a78e29c9e4e6c1218b4d71a284e33efec4edffb1ec0ed6eff2da04a68c8132",
+      "shape": {
+        "closed_traces": [
+          2508,
+          121,
+          3
+        ],
+        "positions": [
+          121,
+          2508,
+          3
+        ]
+      }
+    },
+    {
+      "bytes": 471226,
+      "format": "JSON",
+      "path": "prepared/metadata.json",
+      "role": "catalog_metadata",
+      "sha256": "23ba669c8aea186ad4e53dd72c7084c568a8033628c6ca539691d23470c3dea9"
+    }
+  ],
+  "id": "orbital_debris",
+  "notes": [
+    "Prepared under .cache; the data submodule is not modified."
+  ],
+  "processing": {
+    "created_at": "2026-07-16T11:29:21Z",
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "python": "3.13.3"
+  },
+  "producer": {
+    "command": "uv run tools/data/prepare_orbital_debris.py --output .cache/datoviz/examples/orbital_debris",
+    "script": "tools/data/prepare_orbital_debris.py",
+    "script_version": "git:031cd01b6-dirty"
+  },
+  "schema": "datoviz.example-data.v1",
+  "source": {
+    "format": "OMM-compatible CSV GP element sets",
+    "provider": "CelesTrak",
+    "queries": [
+      "https://celestrak.org/NORAD/elements/gp.php?NAME=FENGYUN+1C+DEB&FORMAT=CSV",
+      "https://celestrak.org/NORAD/elements/gp.php?NAME=IRIDIUM+33+DEB&FORMAT=CSV",
+      "https://celestrak.org/NORAD/elements/gp.php?NAME=COSMOS+2251+DEB&FORMAT=CSV"
+    ],
+    "raw_artifacts": [
+      {
+        "bytes": 290308,
+        "format": "CSV",
+        "path": "source/fengyun_1c.csv",
+        "role": "source_gp_elements",
+        "sha256": "c9111679e4fe9ac87bbee10532a27e7950e15ed882a3fa9dad9740af61e5e2b1"
+      },
+      {
+        "bytes": 16851,
+        "format": "CSV",
+        "path": "source/iridium_33.csv",
+        "role": "source_gp_elements",
+        "sha256": "82cd4195b422ff4e6c4b83785c57ba9a88475a83f609e7a7982928f373baaa27"
+      },
+      {
+        "bytes": 90637,
+        "format": "CSV",
+        "path": "source/cosmos_2251.csv",
+        "role": "source_gp_elements",
+        "sha256": "90a454d96bec38a1c9fe8d1387f407907b357472c7fd86a21cb04a025e2bbdcc"
+      }
+    ],
+    "retrieved_at_utc": "2026-07-16T11:29:20Z"
+  },
+  "status": "committed",
+  "title": "Catalogued Orbital Debris",
+  "validation": {
+    "frame_count": 121,
+    "rejected": {
+      "duplicate": 0,
+      "initialization": 0,
+      "propagation": 0,
+      "stale": 103
+    },
+    "sgp4_valid_objects": 2508
+  },
+  "web": {
+    "max_bytes": 8000000,
+    "required": true,
+    "version": "sha256-5ae33a50aeb8fa81",
+    "virtual_root": "data/examples/orbital_debris"
+  }
+}

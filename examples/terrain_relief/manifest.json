@@ -1,0 +1,82 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1003556,
+      "cols": 490,
+      "elevation_max_m": 4134.1865234375,
+      "elevation_min_m": 2754.533203125,
+      "format": "DVZTRN1 little-endian float32",
+      "path": "prepared/terrain.bin",
+      "role": "elevation-grid",
+      "rows": 512,
+      "sha256": "c9df2a1c4efcb489723fb2ea3ada7be0873f0f14d32f9b00cc86d38b7500458f"
+    },
+    {
+      "bytes": 1598167,
+      "format": "JPEG RGB8",
+      "height": 2048,
+      "path": "prepared/terrain.jpg",
+      "role": "surface-texture",
+      "sha256": "6222a7a2312e8e0c0598eccf8e5cd7601f34006d07012cdeedc5781b83a2d282",
+      "width": 1960
+    }
+  ],
+  "encoding": {
+    "column_order": "west-to-east",
+    "elevation_units": "meters NAVD88",
+    "horizontal_crs": "EPSG:26913",
+    "row_order": "north-to-south",
+    "terrain_header": "<8sIIIffff"
+  },
+  "id": "terrain_relief",
+  "processing": {
+    "created_at": "2026-07-16T12:35:08Z",
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "python": "3.13.3"
+  },
+  "producer": {
+    "command": "python3 tools/data/prepare_terrain_relief.py --output .cache/datoviz/examples/terrain_relief",
+    "script": "tools/data/prepare_terrain_relief.py",
+    "script_version": "git:139c54f7b-dirty"
+  },
+  "schema": "datoviz.example-data.v1",
+  "source": {
+    "bbox_wgs84": [
+      -105.705,
+      40.245,
+      -105.625,
+      40.31
+    ],
+    "elevation": {
+      "copyright": "USGS National Map 3D Elevation Program (3DEP). June 24, 2026.",
+      "description": "The USGS 3D Elevation Program (3DEP) Bare Earth DEM Dynamic service is based on multi-resolution USGS DEM sources and provides dynamic functions for visualization. These functions include: Hillshade, Aspect Map, Hillshade Stretched, Multi-directional Hillshade, Slope Map, Elevation Tinted Hillshade, Contour. In addition the OGC Web Map Service (WMS) and Web Coverage Service (WCS) interfaces are enabled. Data available in this map service reflects all 3DEP DEM data published as of June 23, 2026.",
+      "service": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer"
+    },
+    "imagery": {
+      "copyright": "USGS, USDA, The National Map: Orthoimagery. March 12, 2025.",
+      "description": "The USGS NAIP Plus service from The National Map consists of National Agriculture Imagery Program (NAIP) and high resolution orthoimagery (HRO) that combine the visual attributes of an aerial photograph with the spatial accuracy and reliability of a map. Digital orthoimage resolution may vary from 6 inches to 1 meter. In the former resolution, every pixel in an orthoimage covers a six inch square of the earth\u2019s surface, while in the latter resolution, each pixel represents a one meter square. Many states contribute orthoimagery to The National Map, and the USGS also relies on a partnership with the U.S. Department of Agriculture's Farm Service Agency. The National Map download client allows free downloads of public domain, 1-meter resolution orthoimagery in JPEG 2000 (jp2) format for the conterminous United States, with many urban areas and other locations at 1-foot (or better) resolution also in JPEG 2000 (jp2) format. For additional information on orthoimagery, go to https://nationalmap.gov/ortho.html . crdate-20250311",
+      "service": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer"
+    },
+    "name": "USGS McHenrys Peak terrain and orthoimagery",
+    "output_crs": "EPSG:26913"
+  },
+  "status": "committed",
+  "title": "McHenrys Peak Terrain Relief",
+  "validation": {
+    "aligned_projected_extent": [
+      439988.47776536,
+      4455136.997351257,
+      446942.0995505278,
+      4462402.822563514
+    ],
+    "depth_m": 7265.825212256983,
+    "finite_elevation": true,
+    "width_m": 6953.6217851678375
+  },
+  "web": {
+    "max_bytes": 3000000,
+    "required": true,
+    "version": "sha256-0539b707993348c0",
+    "virtual_root": "data/examples/terrain_relief"
+  }
+}

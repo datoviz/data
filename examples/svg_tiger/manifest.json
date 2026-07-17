@@ -16,6 +16,16 @@
     }
   ],
   "id": "svg_tiger",
+  "processing": {
+    "flatten_tolerance_px": 0.25,
+    "paint_defaults": "Glumpy-compatible: unspecified fill and stroke are disabled",
+    "stroke_width_policy": "unscaled, matching the Glumpy tiger example"
+  },
+  "producer": {
+    "command": "python3 tools/data/prepare_svg_tiger.py --download",
+    "script": "tools/data/prepare_svg_tiger.py",
+    "script_version": "git:c2146956a"
+  },
   "schema": "datoviz.example-data.v1",
   "source": {
     "attribution": "Nicolas P. Rougier, Glumpy example gallery, classic SVG Tiger example",

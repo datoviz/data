@@ -1,0 +1,47 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2257244,
+      "format": "DVZSKY2",
+      "path": "prepared/planet_sky.bin",
+      "role": "render_ready_sky",
+      "sha256": "13e071e2e56a3b560005759e13fd74e50223b998e60de6d0f78a20ca31b74230"
+    }
+  ],
+  "id": "planet_sky",
+  "notes": [
+    "Prepared under .cache; the data submodule is not modified."
+  ],
+  "processing": {
+    "created_at": "2026-07-16T16:51:22Z",
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "python": "3.13.3"
+  },
+  "producer": {
+    "command": "tools/data/prepare_planet_sky.py --offline --force",
+    "script": "tools/data/prepare_planet_sky.py",
+    "script_version": "git:2981b464a-dirty"
+  },
+  "schema": "datoviz.example-data.v1",
+  "source": {
+    "gaia": "Gaia DR3 bright-star astrometry and BP/RP photometry",
+    "kind": "real-data",
+    "mass": "2MASS Point Source Catalog/Stars All Sky View, PIA04250",
+    "snapshot_utc": "2026-07-16T11:01:00Z"
+  },
+  "status": "committed",
+  "title": "Gaia and 2MASS Planet Sky",
+  "validation": {
+    "galaxy_texture_bright_edge_artifact_count": 0,
+    "galaxy_texture_edge_alpha_max": 78,
+    "galaxy_texture_height": 512,
+    "galaxy_texture_width": 1024,
+    "star_count": 8000
+  },
+  "web": {
+    "max_bytes": 2300000,
+    "required": true,
+    "version": "sha256-ca8592458acb5ae2",
+    "virtual_root": "data/examples/planet_sky"
+  }
+}
