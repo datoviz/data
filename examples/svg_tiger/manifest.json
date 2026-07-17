@@ -1,0 +1,36 @@
+{
+  "artifacts": [
+    {
+      "bytes": 213048,
+      "format": "DVZSVG1 little-endian path records and float64 points",
+      "path": "prepared/tiger_paths.bin",
+      "role": "flattened-svg-paths",
+      "sha256": "640a536d848ff2eb3370ab57c88d19ecab912372343cfb3300a2df3be132e650"
+    },
+    {
+      "bytes": 1270,
+      "format": "JSON",
+      "path": "prepared/metadata.json",
+      "role": "preparation-metadata",
+      "sha256": "82ef98d7ed776f0d0d64cd39becf04f5aac124dc64368386c0f78f267643f2e1"
+    }
+  ],
+  "id": "svg_tiger",
+  "schema": "datoviz.example-data.v1",
+  "source": {
+    "attribution": "Nicolas P. Rougier, Glumpy example gallery, classic SVG Tiger example",
+    "commit": "aedb9212a1e00a68b7c4669405a6a8f754daf283",
+    "gallery": "https://glumpy.github.io/gallery.html",
+    "name": "Classic SVG Tiger from Nicolas P. Rougier's Glumpy example gallery",
+    "sha256": "1bc237707ae0523f0e2115917626bfaceb24bc4a388b5ef659b5604b311ff537",
+    "url": "https://github.com/glumpy/glumpy/blob/aedb9212a1e00a68b7c4669405a6a8f754daf283/glumpy/data/tiger.svg"
+  },
+  "status": "committed",
+  "title": "SVG Tiger prepared paths",
+  "web": {
+    "max_bytes": 250000,
+    "required": true,
+    "version": "sha256-640a536d848ff2eb",
+    "virtual_root": "data/examples/svg_tiger"
+  }
+}

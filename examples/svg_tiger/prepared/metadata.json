@@ -1,0 +1,37 @@
+{
+  "artifact": {
+    "bytes": 213048,
+    "path": "tiger_paths.bin",
+    "sha256": "640a536d848ff2eb3370ab57c88d19ecab912372343cfb3300a2df3be132e650"
+  },
+  "document": {
+    "bounds": [
+      5.819219749000013,
+      19.88208227662606,
+      993.3313159734248,
+      979.3133948351
+    ],
+    "closed_path_count": 227,
+    "height": 1000.0,
+    "open_path_count": 13,
+    "path_count": 240,
+    "point_count": 12891,
+    "renderable_path_count": 239,
+    "width": 1000.0
+  },
+  "processing": {
+    "flatten_tolerance_px": 0.25,
+    "paint_defaults": "Glumpy-compatible: unspecified fill and stroke are disabled",
+    "stroke_width_policy": "unscaled, matching the Glumpy tiger example"
+  },
+  "schema": "datoviz.svg-path-cache.v1",
+  "source": {
+    "attribution": "Nicolas P. Rougier, Glumpy example gallery, classic SVG Tiger example",
+    "bytes": 110724,
+    "commit": "aedb9212a1e00a68b7c4669405a6a8f754daf283",
+    "gallery": "https://glumpy.github.io/gallery.html",
+    "redistribution": "maintainer-approved for Datoviz prepared-data publication",
+    "sha256": "1bc237707ae0523f0e2115917626bfaceb24bc4a388b5ef659b5604b311ff537",
+    "url": "https://raw.githubusercontent.com/glumpy/glumpy/aedb9212a1e00a68b7c4669405a6a8f754daf283/glumpy/data/tiger.svg"
+  }
+}
