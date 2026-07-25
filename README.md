@@ -12,6 +12,7 @@ examples/          user-facing prepared example bundles
 fixtures/          small deterministic validation fixtures
 assets/            reusable runtime assets
 gallery/baselines/ expected images used by validation
+tutorials/          canonical tutorial preview captures
 LICENSES/          copied license texts and attribution records
 ```
 
