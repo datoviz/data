@@ -1,0 +1,109 @@
+{
+  "artifacts": [
+    {
+      "bytes": 237,
+      "format": "tsv",
+      "path": "prepared/metadata.tsv",
+      "point_count": 10983,
+      "region_count": 48,
+      "ring_count": 72,
+      "role": "choropleth_metadata",
+      "sha256": "667b6e13bd534dad82d0fede696c52b53d9c161daea8aeee199a2bcff7ea38c5"
+    },
+    {
+      "bytes": 175728,
+      "columns": 2,
+      "format": "binary_f64",
+      "path": "prepared/points_xy_f64.bin",
+      "role": "points_xy",
+      "sha256": "1b9abc9a157a47353a8358e4e34380063a3949edc9e6e699907be8b692c73468"
+    },
+    {
+      "bytes": 864,
+      "columns": 3,
+      "format": "binary_u32",
+      "path": "prepared/rings_u32.bin",
+      "role": "rings",
+      "sha256": "47bcc01d27420ffec9b80f77cce99c55ce6693a4277d1245d6cb474427ed9f71"
+    },
+    {
+      "bytes": 288,
+      "columns": 4,
+      "format": "binary_rgba8",
+      "path": "prepared/ring_fill_rgba8.bin",
+      "role": "ring_fill",
+      "sha256": "76925f0152c3590bcb8bc4e032d44c87ddb622e42619bf4470e8479c1a840245"
+    },
+    {
+      "bytes": 288,
+      "columns": 4,
+      "format": "binary_rgba8",
+      "path": "prepared/ring_stroke_rgba8.bin",
+      "role": "ring_stroke",
+      "sha256": "c20be606fb27688c87b3443185a5f1b830d046994ddbef30c6bdc04a68860c53"
+    },
+    {
+      "bytes": 288,
+      "format": "binary_f32",
+      "path": "prepared/ring_width_f32.bin",
+      "role": "ring_width",
+      "sha256": "831ef0cbd80da163b2975710a845fa59d03a1c5fe4e6a5cb7fbb470a919b099e"
+    },
+    {
+      "bytes": 576,
+      "format": "binary_u64",
+      "path": "prepared/ring_id_u64.bin",
+      "role": "ring_id",
+      "sha256": "63c3e7d61fe8bc7d313229eb29ef425464f35e71ef24cf35d9ab9a84ccdc7474"
+    },
+    {
+      "bytes": 3230,
+      "format": "tsv",
+      "path": "prepared/regions.tsv",
+      "role": "region_metadata",
+      "sha256": "e2c0aa609cfb36a6294f96f62f76cf432f5c0535acbceec6961a6e082a986553"
+    }
+  ],
+  "id": "us_state_choropleth",
+  "processing": {
+    "created_at": "2026-08-02T22:31:35Z",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "producer": {
+    "command": "python tools/data/prepare_us_state_choropleth.py --output data/examples/us_state_choropleth",
+    "script": "tools/data/prepare_us_state_choropleth.py",
+    "script_version": "git:19ea96758-dirty"
+  },
+  "schema": "datoviz.example-data.v1",
+  "source": {
+    "boundary": {
+      "name": "U.S. Census Bureau 2024 Cartographic Boundary File, States, 1:20m",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_20m.zip"
+    },
+    "license": "U.S. Census Bureau public data; cite the Census Bureau as source.",
+    "population": {
+      "name": "U.S. Census Bureau Vintage 2025 state resident population estimates",
+      "url": "https://www2.census.gov/programs-surveys/popest/tables/2020-2025/state/totals/NST-EST2025-POP.xlsx"
+    }
+  },
+  "status": "committed",
+  "title": "Contiguous U.S. State Population Density Choropleth",
+  "validation": {
+    "excluded_statefp": [
+      "02",
+      "11",
+      "15",
+      "60",
+      "66",
+      "69",
+      "72",
+      "78"
+    ],
+    "point_count": 10983,
+    "prepared_layout": "flat typed arrays: metadata.tsv, points_xy_f64.bin, rings_u32.bin, ring style arrays",
+    "region_count": 48,
+    "ring_count": 72,
+    "value": "log10(population_2025 / land_area_km2)"
+  }
+}
