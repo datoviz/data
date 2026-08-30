@@ -1,0 +1,56 @@
+{
+  "artifacts": [
+    {
+      "bytes": 16000040,
+      "columns": [
+        "x",
+        "y",
+        "z",
+        "r",
+        "g",
+        "b",
+        "a",
+        "pixel_size"
+      ],
+      "dtype": "float32",
+      "format": "datoviz-point-cloud-v2",
+      "path": "prepared/point_cloud.bin",
+      "role": "browser-point-cloud-records",
+      "sha256": "ad5b997813ca275a9eb47b4250bb0acebc9a8a8df42fb250c1e199ec9c97d797",
+      "shape": [
+        500000,
+        8
+      ]
+    }
+  ],
+  "id": "point_cloud",
+  "processing": {
+    "browser_point_count": 500000,
+    "sampling": "500000 linearly spaced records selected deterministically from the 6000000-point prepared native bundle",
+    "seed": 12345,
+    "source_point_count": 6000000
+  },
+  "producer": {
+    "command": "python3 tools/data/prepare_point_cloud.py --web-only",
+    "script": "tools/data/prepare_point_cloud.py",
+    "script_version": "git:16f575a3d"
+  },
+  "schema": "datoviz.example-data.v1",
+  "source": {
+    "attribution": "Inertial Labs RESEPI sample data",
+    "license": "Redistribution permission received; permission details pending.",
+    "name": "RESEPI-GENM2X-COLORIZED-50M-10MS-STRIP-OUTLIER.laz",
+    "raw_bytes": 196413703,
+    "raw_sha256": "08d4c50d15efa496c8c5f8168a4331260fe85797f7412506aea5a1c1885add45",
+    "sample_page": "https://lidarpayload.com/sample-data/",
+    "viewer": "https://app.stitch3d.io/viewer/689bab260195cc818197583b"
+  },
+  "status": "committed",
+  "title": "RESEPI RGB LiDAR Point Cloud Browser Bundle",
+  "web": {
+    "max_bytes": 20000000,
+    "required": true,
+    "version": "sha256-ad5b997813ca275a",
+    "virtual_root": "data/examples/point_cloud"
+  }
+}
